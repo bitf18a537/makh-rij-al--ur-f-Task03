@@ -11,12 +11,108 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="TextView"
+        android:hint="Letter"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/hal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:onClick="Halqiyah"
+        android:text="Halqiyah"
+        android:textColor="#FFEB3B"
+        app:layout_constraintEnd_toStartOf="@+id/gl"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/lah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="52dp"
+        android:onClick="Lahatiyah"
+        android:text="Lahatiyah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gl"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/haa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="Haafiyah"
+        android:text="Haafiyah"
+        app:layout_constraintStart_toStartOf="@+id/hal"
+        app:layout_constraintTop_toBottomOf="@+id/hal" />
+
+    <Button
+        android:id="@+id/nit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="Nit-eeyah"
+        android:text="Nit-eeyah"
+        app:layout_constraintStart_toStartOf="@+id/haa"
+        app:layout_constraintTop_toBottomOf="@+id/haa" />
+
+    <Button
+        android:id="@+id/gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="Getletter"
+        android:text="GetLetter"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/tar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="Tarfiyah"
+        android:text="Tarfiyah"
+        app:layout_constraintEnd_toEndOf="@+id/lah"
+        app:layout_constraintTop_toBottomOf="@+id/lah" />
+
+    <Button
+        android:id="@+id/gun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="Ghunna"
+        android:text="Ghunna"
+        app:layout_constraintStart_toStartOf="@+id/nit"
+        app:layout_constraintTop_toBottomOf="@+id/nit" />
+
+    <Button
+        android:id="@+id/lis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="Lisaveyah"
+        android:text="Lisaveyah"
+        app:layout_constraintEnd_toEndOf="@+id/tar"
+        app:layout_constraintTop_toBottomOf="@+id/tar" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:hint="Answer"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/lis"
+        app:layout_constraintTop_toBottomOf="@+id/lis" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
