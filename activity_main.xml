@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFA07A"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/getview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -23,11 +24,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:background="#F44336"
         android:onClick="Halqiyah"
         android:text="Halqiyah"
         android:textColor="#FFEB3B"
         app:layout_constraintEnd_toStartOf="@+id/gl"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/getview" />
 
     <Button
         android:id="@+id/lah"
@@ -35,11 +37,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="52dp"
+        android:background="#4CAF50"
         android:onClick="Lahatiyah"
         android:text="Lahatiyah"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/gl"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/getview" />
 
     <Button
         android:id="@+id/haa"
@@ -56,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:onClick="Nit-eeyah"
+        android:onClick="Niteeyah"
         android:text="Nit-eeyah"
         app:layout_constraintStart_toStartOf="@+id/haa"
         app:layout_constraintTop_toBottomOf="@+id/haa" />
@@ -68,9 +71,9 @@
         android:layout_marginTop="32dp"
         android:onClick="Getletter"
         android:text="GetLetter"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="@+id/getview"
+        app:layout_constraintStart_toStartOf="@+id/getview"
+        app:layout_constraintTop_toBottomOf="@+id/getview" />
 
     <Button
         android:id="@+id/tar"
@@ -103,7 +106,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tar" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/getanswer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
