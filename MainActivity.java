@@ -2,6 +2,7 @@ package com.example.arabicwords;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
 
         textViewGuessLetter = findViewById(R.id.getview);
         textViewShowAnswer = findViewById(R.id.getanswer);
+
+        bgetletter = findViewById(R.id.gl);
+        bHalqiyah = findViewById(R.id.hal);
+        bLahatiyah = findViewById(R.id.lah);
+        bHaafiyah = findViewById(R.id.haa);
+        bTarfiyah = findViewById(R.id.tar);
+        bNiteeyah = findViewById(R.id.nit);
+        bLisaveyah = findViewById(R.id.lis);
+        bGhunna = findViewById(R.id.gun);
 
     }
 
