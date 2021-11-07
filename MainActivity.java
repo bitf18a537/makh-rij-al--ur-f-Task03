@@ -4,10 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
+
+
+    TextView textViewGuessLetter, textViewShowAnswer;
+
+    Button bgetletter, bHalqiyah,bLahatiyah,bHaafiyah,bTarfiyah,bNiteeyah,bLisaveyah,bGhunna;
 
     String [] Halqiyah  = {"خ", "غ","ح","ع","ہ","أ"};
     String [] Lahatiyah  = {"ک", "ق"};
@@ -23,23 +30,32 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        textViewGuessLetter = findViewById(R.id.getview);
+        textViewShowAnswer = findViewById(R.id.getanswer);
+
     }
 
     public void GetLetter(View view) {
         Random random = new Random();
         int letterToDsiplay = random.nextInt(7);
-        if(letterToDsiplay==0){
-            realAnswer = "Sky Letters";
-            int i = SkyLetters.length;
-            textViewGuessLetter.setText(SkyLetters[random.nextInt(i)]);
-        } else if (letterToDsiplay==1){
+        if(letterToDsiplay==0)
+        {
+            realAnswer = "";
+            int i = ;
+            textViewGuessLetter.setText([random.nextInt(i)]);
+        }
+        else if (letterToDsiplay==1)
+        {
             realAnswer = "Grass Letters";
             int i = grassLetters.length;
             textViewGuessLetter.setText(grassLetters[random.nextInt(i)]);
-        }else {
+        }
+        else
+            {
             realAnswer = "Root Letters";
             int i = rootLetter.length;
             textViewGuessLetter.setText(rootLetter[random.nextInt(i)]);
-        }
+            }
     }
 }
