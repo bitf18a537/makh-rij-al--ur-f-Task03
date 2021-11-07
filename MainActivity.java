@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void GetLetter(View view) {
+    public void Getletter(View view) {
         Random random = new Random();
         int letterToDsiplay = random.nextInt(7);
         if(letterToDsiplay==0)
@@ -125,8 +125,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void ShowResult(String studentAnswer)
+    public void ShowResult(String studentResult)
     {
-        
+
+        if(studentResult == realAnswer)
+        {textViewShowAnswer.setText("OK");
+            textViewShowAnswer.setBackgroundColor(Color.GREEN);}
+        else
+        {textViewShowAnswer.setText("OOPS");
+            textViewShowAnswer.setBackgroundColor(Color.RED);
+        }
+
     }
 }
