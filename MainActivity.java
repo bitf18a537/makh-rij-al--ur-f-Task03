@@ -41,21 +41,49 @@ public class MainActivity extends AppCompatActivity {
         int letterToDsiplay = random.nextInt(7);
         if(letterToDsiplay==0)
         {
-            realAnswer = "";
-            int i = ;
-            textViewGuessLetter.setText([random.nextInt(i)]);
+            realAnswer = "Halqiyah";
+            int i = Halqiyah.length;
+            textViewGuessLetter.setText(Halqiyah[random.nextInt(i)]);
         }
         else if (letterToDsiplay==1)
         {
-            realAnswer = "Grass Letters";
-            int i = grassLetters.length;
-            textViewGuessLetter.setText(grassLetters[random.nextInt(i)]);
+            realAnswer = "Lahatiyah";
+            int i = Lahatiyah.length;
+            textViewGuessLetter.setText(Lahatiyah[random.nextInt(i)]);
+        }
+        else if (letterToDsiplay==2)
+        {
+            realAnswer = "Haafiyah";
+            int i = Haafiyah.length;
+            textViewGuessLetter.setText(Haafiyah[random.nextInt(i)]);
+        }
+
+        else if (letterToDsiplay==3)
+        {
+            realAnswer = "Tarfiyah";
+            int i = Tarfiyah.length;
+            textViewGuessLetter.setText(Tarfiyah[random.nextInt(i)]);
+        }
+
+        else if (letterToDsiplay==4)
+        {
+            realAnswer = "Niteeyah";
+            int i = Niteeyah.length;
+            textViewGuessLetter.setText(Niteeyah[random.nextInt(i)]);
+        }
+
+        else if (letterToDsiplay==5)
+        {
+            realAnswer = "Lisaveyah";
+            int i = Lisaveyah.length;
+            textViewGuessLetter.setText(Lisaveyah[random.nextInt(i)]);
         }
         else
-            {
-            realAnswer = "Root Letters";
-            int i = rootLetter.length;
-            textViewGuessLetter.setText(rootLetter[random.nextInt(i)]);
-            }
+        {
+            realAnswer = "Ghunna";
+            int i = Ghunna.length;
+            textViewGuessLetter.setText(Ghunna[random.nextInt(i)]);
+        }
+
     }
 }
