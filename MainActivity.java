@@ -86,4 +86,47 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+    public void Halqiyah(View view)
+    {
+        studentAnswer = "Halqiyah";
+        ShowResult(studentAnswer);
+    }
+
+    public void Lahatiyah(View view)
+    {
+        studentAnswer = "Lahatiyah";
+        ShowResult(studentAnswer);
+    }
+    public void Haafiyah(View view)
+    {
+        studentAnswer = "Haafiyah";
+        ShowResult(studentAnswer);
+    }
+    public void Tarfiyah(View view)
+    {
+        studentAnswer = "Tarfiyah";
+        ShowResult(studentAnswer);
+    }
+    public void Niteeyah(View view)
+    {
+        studentAnswer = "Niteeyah";
+        ShowResult(studentAnswer);
+    }
+    public void Lisaveyah(View view)
+    {
+        studentAnswer = "Lisaveyah";
+        ShowResult(studentAnswer);
+    }
+    public void Ghunna(View view)
+    {
+        studentAnswer = "Ghunna";
+        ShowResult(studentAnswer);
+    }
+
+
+    public void ShowResult(String studentAnswer)
+    {
+        
+    }
 }
