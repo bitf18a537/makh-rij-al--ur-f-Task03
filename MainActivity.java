@@ -13,11 +13,12 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    int count =0;
-    int marks =0;
+    int COUNT =0;
+    int MARKS =0;
     TextView textViewGuessLetter, textViewShowAnswer;
 
     Button bgetletter, bHalqiyah,bLahatiyah,bHaafiyah,bTarfiyah,bNiteeyah,bLisaveyah,bGhunna;
+    Button showresult;
 
     String [] Halqiyah  = {"خ", "غ","ح","ع","ہ","أ"};
     String [] Lahatiyah  = {"ک", "ق"};
@@ -46,6 +47,27 @@ public class MainActivity extends AppCompatActivity {
         bLisaveyah = findViewById(R.id.lis);
         bGhunna = findViewById(R.id.gun);
 
+        // on click listener for sending data from activity main to activity 2
+        showresult = findViewById(R.id.result);
+
+
+        showresult.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String final_marks= String.valueOf(MARKS);
+                if (COUNT >= 5)
+                {
+                    Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
+                    intent.putExtra("value", final_marks);
+                    startActivity(intent);
+
+                }
+
+
+
+            }
+        });
 
 
     }
@@ -146,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
         if(studentResult == realAnswer)
         {   textViewShowAnswer.setText("OK");
             textViewShowAnswer.setBackgroundColor(Color.GREEN);
-            marks++;
+            MARKS++;
         }
         else
         {
@@ -154,18 +176,20 @@ public class MainActivity extends AppCompatActivity {
             textViewShowAnswer.setBackgroundColor(Color.RED);
         }
 
-        count++;
+        COUNT++;
     }
 
+    // on click listner for show result
 
-    public void FinalResult(View v)
+    /*public void FinalResult(View v)
     {
-        if (count==5)
+
+        if (count==1)
         {
             Intent fintent = new Intent(MainActivity.this, MainActivity2.class);
             fintent.putExtra("value", marks);
             startActivity(fintent);
 
         }
-    }
+    }*/
 }
