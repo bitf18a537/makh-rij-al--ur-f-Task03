@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFA07A"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/getview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:hint="Letter"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,8 +23,8 @@
         android:id="@+id/hal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:background="#F44336"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="180dp"
         android:onClick="Halqiyah"
         android:text="Halqiyah"
         android:textColor="#FFEB3B"
@@ -35,12 +35,13 @@
         android:id="@+id/lah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="52dp"
-        android:background="#4CAF50"
+
         android:onClick="Lahatiyah"
         android:text="Lahatiyah"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/gl"
         app:layout_constraintTop_toBottomOf="@+id/getview" />
 
@@ -68,10 +69,11 @@
         android:id="@+id/gl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="152dp"
         android:onClick="Getletter"
         android:text="GetLetter"
         app:layout_constraintEnd_toEndOf="@+id/getview"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="@+id/getview"
         app:layout_constraintTop_toBottomOf="@+id/getview" />
 
@@ -115,7 +117,6 @@
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="@+id/lis"
         app:layout_constraintTop_toBottomOf="@+id/lis" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
