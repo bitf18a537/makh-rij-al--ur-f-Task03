@@ -27,7 +27,6 @@
 
         android:onClick="Halqiyah"
         android:text="Halqiyah"
-        android:textColor="#FFEB3B"
         app:layout_constraintEnd_toStartOf="@+id/gl"
         app:layout_constraintTop_toBottomOf="@+id/getview" />
 
@@ -120,11 +119,10 @@
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:onClick="FinalResult"
+        android:layout_marginTop="90dp"
         android:text="Show Results"
-        app:layout_constraintStart_toStartOf="@+id/gun"
-        app:layout_constraintTop_toBottomOf="@+id/gun" />
+        app:layout_constraintEnd_toStartOf="@+id/gl"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
