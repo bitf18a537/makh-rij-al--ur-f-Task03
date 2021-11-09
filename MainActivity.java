@@ -2,6 +2,7 @@ package com.example.arabicwords;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +13,8 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    int count =0;
+    int marks =0;
     TextView textViewGuessLetter, textViewShowAnswer;
 
     Button bgetletter, bHalqiyah,bLahatiyah,bHaafiyah,bTarfiyah,bNiteeyah,bLisaveyah,bGhunna;
@@ -43,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
         bNiteeyah = findViewById(R.id.nit);
         bLisaveyah = findViewById(R.id.lis);
         bGhunna = findViewById(R.id.gun);
+
+
 
     }
 
@@ -95,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
             textViewGuessLetter.setText(Ghunna[random.nextInt(i)]);
         }
 
+
     }
 
     public void Halqiyah(View view)
@@ -139,12 +144,28 @@ public class MainActivity extends AppCompatActivity {
     {
 
         if(studentResult == realAnswer)
-        {textViewShowAnswer.setText("OK");
-            textViewShowAnswer.setBackgroundColor(Color.GREEN);}
+        {   textViewShowAnswer.setText("OK");
+            textViewShowAnswer.setBackgroundColor(Color.GREEN);
+            marks++;
+        }
         else
-        {textViewShowAnswer.setText("OOPS");
+        {
+            textViewShowAnswer.setText("OOPS");
             textViewShowAnswer.setBackgroundColor(Color.RED);
         }
 
+        count++;
+    }
+
+
+    public void FinalResult(View v)
+    {
+        if (count==5)
+        {
+            Intent fintent = new Intent(MainActivity.this, MainActivity2.class);
+            fintent.putExtra("value", marks);
+            startActivity(fintent);
+
+        }
     }
 }
