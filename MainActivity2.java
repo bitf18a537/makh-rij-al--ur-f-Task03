@@ -9,25 +9,24 @@ import android.widget.TextView;
 
 public class MainActivity2 extends AppCompatActivity {
 
-    TextView textview;
+    TextView SHOWMARKS;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-
-
-
-    }
-
-    public void clickresult(View v)
-    {
-        textview = findViewById(R.id.marks);
+        SHOWMARKS = (TextView) findViewById(R.id.marks);
 
         Intent intent = getIntent();
-        textview.setText(intent.getStringExtra("value"));
+        String getresult = intent.getStringExtra("value");
+        SHOWMARKS.setText(getresult);
+
+
+
     }
+
+
 
     public void ShareResult (View v)
     {
